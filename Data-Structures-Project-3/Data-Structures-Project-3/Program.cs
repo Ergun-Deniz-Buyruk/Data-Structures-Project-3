@@ -35,13 +35,15 @@ namespace Data_Structures_Project_3
             String aranacakYiyecek = "Hamburger";
             adiVerilenYiyecegiBul(binarySearchTree.getRoot(), aranacakYiyecek);
 
-            Console.WriteLine(aranacakYiyecek + " yiyeceğinin toplam sayısı: " + toplamYiyecekSayisi);
+            Console.WriteLine(aranacakYiyecek + " yiyeceğinin toplam sayısı: " + toplamYiyecekSayisi + "\n\n");
 
             // Bornovadaki 10 mahalleyi hashtable'a ekleyen metot.
             Hashtable hashtable = HashtableOlustur();
 
             // HashTable'i guncelle.
             HashtableGuncelle(hashtable, 'B');
+
+            QuickSortOrnegi();
 
             Console.ReadLine();
 
@@ -218,5 +220,46 @@ namespace Data_Structures_Project_3
                 }
             }
         }
+
+        /*public static void heapOlustur()
+        {
+            MaxHeap.Heap maxHeap = new MaxHeap.Heap(15);
+
+            maxHeap.insert(new BornovaMahalle("Barbaros", 11598));
+            maxHeap.insert(new BornovaMahalle("Ergene", 11245));
+            maxHeap.insert(new BornovaMahalle("Naldoken", 11245));
+            maxHeap.insert(new BornovaMahalle("Zafer", 9876));
+            maxHeap.insert(new BornovaMahalle("Karacaoglan", 8818));
+            maxHeap.insert(new BornovaMahalle("Meric", 8394));
+            maxHeap.insert(new BornovaMahalle("Kosukavak", 7916));
+            maxHeap.insert(new BornovaMahalle("Tuna", 7607));
+            maxHeap.insert(new BornovaMahalle("Birlik", 6949));
+            maxHeap.insert(new BornovaMahalle("Serintepe", 6905));
+
+
+            maxHeap.displayHeap();
+
+
+        }*/
+
+        public static void QuickSortOrnegi()
+        {
+            int[] sayilar = { 11598, 11245, 11245, 9876, 8818, 8394, 7916, 7607, 6949, 6905 };
+
+            foreach(int i in sayilar)
+            {
+                Console.Write(i + "-");
+            }
+            Console.WriteLine();
+
+            QuickSort.Quick_Sort(sayilar, 0, sayilar.Length - 1);
+
+            foreach (int i in sayilar)
+            {
+                Console.Write(i + "-");
+            }
+        }
+
+        
     }
 }

@@ -141,7 +141,5 @@ namespace Data_Structures_Project_3
             int leftNodeDerinlik = derinligiBul(node.leftChild);
             return Math.Max(rigthNodeDerinlik, leftNodeDerinlik) + 1;
         }
-
-
     }
 }
