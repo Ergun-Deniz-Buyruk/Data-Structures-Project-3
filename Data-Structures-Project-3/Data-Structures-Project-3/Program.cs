@@ -40,20 +40,8 @@ namespace Data_Structures_Project_3
             // Bornovadaki 10 mahalleyi hashtable'a ekleyen metot.
             Hashtable hashtable = HashtableOlustur();
 
-            foreach(string key in hashtable.Keys)
-            {
-                Console.WriteLine(hashtable[key]);
-            }
-
-            // HashTablei guncelle.
+            // HashTable'i guncelle.
             HashtableGuncelle(hashtable, 'B');
-
-            Console.WriteLine("----------------------------------------------------");
-            
-            foreach (string key in hashtable.Keys)
-            {
-                Console.WriteLine(hashtable[key]);
-            }
 
             Console.ReadLine();
 
@@ -214,8 +202,12 @@ namespace Data_Structures_Project_3
         */
         public static void HashtableGuncelle(Hashtable hashtable, char mahalleBasHarfi)
         {
+            // Parametre olarak gelen hashTable'i kopyalayıp kopya hashtableile devam ettim.
+            // Kopyalamayınca hata veriyor ve sebebini çözemedim.
+            Hashtable copyHashtable = (Hashtable) hashtable.Clone();
+
             // Hashtabledeki tum mahalleleri tek tek gez.
-            foreach (string mahalleAdi in hashtable.Keys)
+            foreach (string mahalleAdi in copyHashtable.Keys)
             {
                 // Eger mahallenin ilk harfi aradıgımız har ise nüfusunu 1 arttırıp hashtableda güncelle.
                 if (mahalleBasHarfi.Equals(mahalleAdi[0]))
