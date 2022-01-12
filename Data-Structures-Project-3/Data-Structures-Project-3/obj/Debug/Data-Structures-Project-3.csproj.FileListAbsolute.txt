@@ -1,0 +1,8 @@
+D:\Projeler\C# Projeleri\Data-Structures-Project-3\Data-Structures-Project-3\Data-Structures-Project-3\bin\Debug\Data-Structures-Project-3.exe.config
+D:\Projeler\C# Projeleri\Data-Structures-Project-3\Data-Structures-Project-3\Data-Structures-Project-3\bin\Debug\Data-Structures-Project-3.exe
+D:\Projeler\C# Projeleri\Data-Structures-Project-3\Data-Structures-Project-3\Data-Structures-Project-3\bin\Debug\Data-Structures-Project-3.pdb
+D:\Projeler\C# Projeleri\Data-Structures-Project-3\Data-Structures-Project-3\Data-Structures-Project-3\obj\Debug\Data-Structures-Project-3.csproj.AssemblyReference.cache
+D:\Projeler\C# Projeleri\Data-Structures-Project-3\Data-Structures-Project-3\Data-Structures-Project-3\obj\Debug\Data-Structures-Project-3.csproj.SuggestedBindingRedirects.cache
+D:\Projeler\C# Projeleri\Data-Structures-Project-3\Data-Structures-Project-3\Data-Structures-Project-3\obj\Debug\Data-Structures-Project-3.csproj.CoreCompileInputs.cache
+D:\Projeler\C# Projeleri\Data-Structures-Project-3\Data-Structures-Project-3\Data-Structures-Project-3\obj\Debug\Data-Structures-Project-3.exe
+D:\Projeler\C# Projeleri\Data-Structures-Project-3\Data-Structures-Project-3\Data-Structures-Project-3\obj\Debug\Data-Structures-Project-3.pdb
