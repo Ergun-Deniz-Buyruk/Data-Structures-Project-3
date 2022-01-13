@@ -8,6 +8,9 @@ namespace Data_Structures_Project_3
 {
     internal class QuickSort
     {
+        /*
+         * 4. soruda istenen sort algoritması ornegi. Biz burada Quick sort ornegini secip kodladık.
+         */
         public static void Quick_Sort(int[] arr, int left, int right)
         {
             if (left < right)
@@ -23,7 +26,6 @@ namespace Data_Structures_Project_3
                     Quick_Sort(arr, pivot + 1, right);
                 }
             }
-
         }
 
         public static int Partition(int[] arr, int left, int right)
@@ -49,8 +51,6 @@ namespace Data_Structures_Project_3
                     int temp = arr[left];
                     arr[left] = arr[right];
                     arr[right] = temp;
-
-
                 }
                 else
                 {

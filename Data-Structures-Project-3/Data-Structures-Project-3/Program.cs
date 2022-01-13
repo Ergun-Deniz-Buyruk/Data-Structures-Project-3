@@ -43,6 +43,10 @@ namespace Data_Structures_Project_3
             // HashTable'i guncelle.
             HashtableGuncelle(hashtable, 'B');
 
+            // Heap olustur ve ekkrana yazdir.
+            HeapOlustur();
+
+            // QuickSort Ornegi
             QuickSortOrnegi();
 
             Console.ReadLine();
@@ -221,45 +225,64 @@ namespace Data_Structures_Project_3
             }
         }
 
-        /*public static void heapOlustur()
+        public static void HeapOlustur()
         {
-            MaxHeap.Heap maxHeap = new MaxHeap.Heap(15);
+            // Maxheap'i olustur.
+            MaxHeap maxHeap = new MaxHeap(15);
 
-            maxHeap.insert(new BornovaMahalle("Barbaros", 11598));
-            maxHeap.insert(new BornovaMahalle("Ergene", 11245));
-            maxHeap.insert(new BornovaMahalle("Naldoken", 11245));
-            maxHeap.insert(new BornovaMahalle("Zafer", 9876));
-            maxHeap.insert(new BornovaMahalle("Karacaoglan", 8818));
-            maxHeap.insert(new BornovaMahalle("Meric", 8394));
-            maxHeap.insert(new BornovaMahalle("Kosukavak", 7916));
-            maxHeap.insert(new BornovaMahalle("Tuna", 7607));
-            maxHeap.insert(new BornovaMahalle("Birlik", 6949));
-            maxHeap.insert(new BornovaMahalle("Serintepe", 6905));
+            // Maxheap'a 10 tane mahalle ekle.
+            maxHeap.insert("Barbaros", 11598);
+            maxHeap.insert("Ergene", 11245);
+            maxHeap.insert("Naldoken", 11245);
+            maxHeap.insert("Zafer", 9876);
+            maxHeap.insert("Karacaoglan", 8818);
+            maxHeap.insert("Meric", 8394);
+            maxHeap.insert("Kosukavak", 7916);
+            maxHeap.insert("Tuna", 7607);
+            maxHeap.insert("Birlik", 6949);
+            maxHeap.insert("Serintepe", 6905);
 
-
+            // Mahalleleri yazdir.
             maxHeap.displayHeap();
 
+            // Nüfusu en çok olan 3 mahalleyi sil ve silinen mahalleleri ekrana yaz.
+            Console.WriteLine("Heap'tan silinen mahalleler: ");
+            for(int i = 0; i < 3; i++)
+            {
+                Console.WriteLine("    " + maxHeap.remove());
+            }
+            Console.WriteLine();
 
-        }*/
+            // 3 mahalle silindikten sonra mahalleleri tekrar ekrana yaz.
+            maxHeap.displayHeap();
+        }
 
+
+        /*
+         * 4. soruda istenen sort algoritması ornegi. Biz burada Quick sort ornegini secip kodladık.
+         */
         public static void QuickSortOrnegi()
         {
             int[] sayilar = { 11598, 11245, 11245, 9876, 8818, 8394, 7916, 7607, 6949, 6905 };
 
+            // Listeyi sıralamdan once ekrana yazdir.
+            Console.WriteLine("\nSıralamadan once liste:");
             foreach(int i in sayilar)
             {
                 Console.Write(i + "-");
             }
             Console.WriteLine();
 
+            // Listeyi sırala.
             QuickSort.Quick_Sort(sayilar, 0, sayilar.Length - 1);
 
+            // SIralanmış listeyi ekrana yazdir.
+            Console.WriteLine("\nSıralamadan sonra liste:");
             foreach (int i in sayilar)
             {
                 Console.Write(i + "-");
             }
+            Console.WriteLine();
         }
-
-        
     }
 }
