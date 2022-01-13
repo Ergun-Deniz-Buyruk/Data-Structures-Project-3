@@ -32,7 +32,7 @@ namespace Data_Structures_Project_3
             yuzElliTlUzeriniYazdir(binarySearchTree, "Özkanlar");
 
             // Adi verilen yiyeceğin agacta kac tane oldugunu bul ve indirim uygula.
-            String aranacakYiyecek = "Hamburger";
+            String aranacakYiyecek = "Pilav";
             adiVerilenYiyecegiBul(binarySearchTree.getRoot(), aranacakYiyecek);
 
             Console.WriteLine(aranacakYiyecek + " yiyeceğinin toplam sayısı: " + toplamYiyecekSayisi + "\n\n");
@@ -85,7 +85,8 @@ namespace Data_Structures_Project_3
                         int yemekSirasi = random.Next(7);
 
                         // Yemegi olustur.
-                        Yemek yemek = new Yemek(yemekler[yemekSirasi], random.Next(1, 9), yemekBirimFiyatlari[yemekSirasi]);
+                        Yemek yemek = new Yemek(yemekler[yemekSirasi], random.Next(1, 9), 
+                            yemekBirimFiyatlari[yemekSirasi]);
 
                         // Olusan yemegi yemek listesine (siparis bilgilerine) ekle.
                         siparisBilgileri.getSiparis().Add(yemek);
@@ -225,6 +226,9 @@ namespace Data_Structures_Project_3
             }
         }
 
+        /* 
+         * 3. sorunun b şıkkında belirtildigi gibi heap veri yapınıa 10 tane mahalle ekleyen metot. 
+        */
         public static void HeapOlustur()
         {
             // Maxheap'i olustur.
